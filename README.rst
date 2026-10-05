@@ -1,6 +1,6 @@
-.. image:: https://img.shields.io/badge/license-LGPL--3-green.svg
-    :target: https://www.gnu.org/licenses/lgpl-3.0-standalone.html
-    :alt: License: LGPL-3
+.. image:: https://img.shields.io/badge/license-OPL--1-red.svg
+    :target: https://www.odoo.com/documentation/16.0/legal/licenses.html#odoo-apps
+    :alt: License: OPL-1
 
 Oman E-invoicing - ConvergeX
 ==========================
@@ -18,8 +18,8 @@ Configuration
 
 License
 -------
-Lesser General Public License, Version 3 (LGPL v3).
-(https://www.gnu.org/licenses/lgpl-3.0-standalone.html)
+Odoo Proprietary License v1.0 (OPL-1)
+(https://www.odoo.com/documentation/16.0/legal/licenses.html#odoo-apps)
 
 Company
 -------
@@ -50,3 +50,4 @@ For support and more information, please visit `Our Website <https://cybrosys.co
 Further information
 ===================
 HTML Description: `<static/description/index.html>`__
+

@@ -1,23 +1,24 @@
-#############################################################################
+# -- coding: utf-8 --
+###############################################################################
 #
 #    Cybrosys Technologies Pvt. Ltd.
 #
 #    Copyright (C) 2026-TODAY Cybrosys Technologies(<https://www.cybrosys.com>)
 #    Author: Cybrosys Techno Solutions(<https://www.cybrosys.com>)
 #
-#    You can modify it under the terms of the GNU LESSER
-#    GENERAL PUBLIC LICENSE (LGPL v3), Version 3.
+#    This program is under the terms of the Odoo Proprietary License v1.0(OPL-1)
+#    It is forbidden to publish, distribute, sublicense, or sell copies of the
+#    Software or modified copies of the Software.
 #
-#    This program is distributed in the hope that it will be useful,
-#    but WITHOUT ANY WARRANTY; without even the implied warranty of
-#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-#    GNU LESSER GENERAL PUBLIC LICENSE (LGPL v3) for more details.
+#    THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+#    IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+#    FITNESS FOR A PARTICULAR PURPOSE AND NON INFRINGEMENT. IN NO EVENT SHALL
+#    THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM,DAMAGES OR OTHER
+#    LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE,ARISING
+#    FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
+#    DEALINGS IN THE SOFTWARE.
 #
-#    You should have received a copy of the GNU LESSER GENERAL PUBLIC LICENSE
-#    (LGPL v3) along with this program.
-#    If not, see <http://www.gnu.org/licenses/>.
-#
-#############################################################################
+###############################################################################
 from odoo import api, fields, models, _
 from odoo.exceptions import ValidationError
 
@@ -48,6 +49,7 @@ class AccountMoveLine(models.Model):
 
     @api.depends('product_id', 'company_id')
     def _compute_l10n_om_classification_codes(self):
+        """ Compute default Oman HS and ISIC classification codes from the product or company. """
         for line in self:
             if line.product_id:
                 line.l10n_om_hs_code = line.product_id.l10n_om_hs_code or False
@@ -62,6 +64,7 @@ class AccountMoveLine(models.Model):
 
     @api.constrains('l10n_om_hs_code')
     def _check_l10n_om_hs_code(self):
+        """ Ensure the invoice line Oman HS Code is exactly 12 numeric digits (IBT-158). """
         for line in self:
             if line.l10n_om_hs_code:
                 code = line.l10n_om_hs_code.strip()
@@ -72,6 +75,7 @@ class AccountMoveLine(models.Model):
 
     @api.constrains('l10n_om_isic_code')
     def _check_l10n_om_isic_code(self):
+        """ Ensure the invoice line Oman ISIC Code is exactly 6 numeric digits (BTOM-033). """
         for line in self:
             if line.l10n_om_isic_code:
                 code = line.l10n_om_isic_code.strip()
