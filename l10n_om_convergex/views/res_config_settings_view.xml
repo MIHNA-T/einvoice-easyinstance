@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="res_config_settings_view_form" model="ir.ui.view">
+        <field name="name">res.config.settings.view.form.inherit.l10n_om_convergex</field>
+        <field name="model">res.config.settings</field>
+        <field name="inherit_id" ref="account.res_config_settings_view_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//block[@id='peppol']" position="after">
+                <block title="ConvergeX (Oman E-Invoicing)" id="l10n_om_convergex_settings" invisible="country_code != 'OM'">
+                    <div class="col-12 col-lg-12 o_setting_box">
+                        <div class="o_setting_right_pane border-0">
+                            <div class="text-muted oe_inline mb-3">
+                                Credentials for the ConvergeX (convergex.biz) Accredited Service Provider
+                                platform, used to submit Oman e-invoices and credit notes.
+                            </div>
+                            <div class="row">
+                                <label string="API Base URL" for="l10n_om_convergex_base_url" class="col-lg-3 o_light_label"/>
+                                <field name="l10n_om_convergex_base_url"/>
+                            </div>
+                            <div class="row">
+                                <label string="Client ID" for="l10n_om_convergex_client_id" class="col-lg-3 o_light_label"/>
+                                <field name="l10n_om_convergex_client_id"/>
+                            </div>
+                            <div class="row">
+                                <label string="Client Secret" for="l10n_om_convergex_client_secret" class="col-lg-3 o_light_label"/>
+                                <field name="l10n_om_convergex_client_secret" password="True"/>
+                            </div>
+                            <div class="row">
+                                <label string="Standard Invoice Type UUID" for="l10n_om_convergex_invoice_type_uuid" class="col-lg-3 o_light_label"/>
+                                <field name="l10n_om_convergex_invoice_type_uuid"/>
+                            </div>
+                            <div class="row">
+                                <label string="Credit Note Type UUID" for="l10n_om_convergex_credit_note_type_uuid" class="col-lg-3 o_light_label"/>
+                                <field name="l10n_om_convergex_credit_note_type_uuid"/>
+                            </div>
+                            <div class="row">
+                                <label string="Default ISIC Code" for="l10n_om_default_isic_code" class="col-lg-3 o_light_label"/>
+                                <field name="l10n_om_default_isic_code" placeholder="e.g. 471101 (6 digits)"/>
+                            </div>
+                            <div class="row mt-2" invisible="not l10n_om_convergex_client_id">
+
+                                <div class="col-lg-9 offset-lg-3">
+                                    <button name="action_l10n_om_convergex_test_connection" type="object"
+                                            string="Test Connection" class="btn-secondary"/>
+                                    <div class="text-muted mt-1">
+                                        Save your changes first if you just edited the credentials above.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </block>
+            </xpath>
+        </field>
+    </record>
+</odoo>

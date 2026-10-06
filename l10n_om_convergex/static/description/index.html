@@ -1,0 +1,806 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Oman E-Invoicing - ConvergeX</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css " rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com " />
+    <link rel="preconnect" href="https://fonts.gstatic.com " crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital ,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css " />
+</head>
+
+<body style="font-family: &quot;Montserrat&quot;, sans-serif;background-color: #71639e08;">
+    <div class="container-fluid cmpad">
+        <div class="supports my-3 py-3" style="    border: 2px solid #71639e10;
+    padding: 0 35px;
+    border-radius: 10px;    border: 2px solid #e9ecef;background-color: white;">
+            <div class="row justify-content-between align-items-center">
+                <div class="col-lg-3">
+                    <div class="my-3 mx-auto mx-sm-0" style="width: 250px; ">
+                        <img src="//apps.odoocdn.com/apps/assets/17.0/theme_boec/images/Cybrosys.png?fcdde35"
+                            style="width: 100%;">
+                    </div>
+                </div>
+                <div class="col-lg-9">
+                    <div class="row">
+                        <div class="my-3 d-flex align-items-center justify-content-center justify-content-sm-end">
+                            <span class="me-3"><b>Supports: </b></span>
+                            <div class="text-center" style="
+                    background-color: #71639e !important;
+                    font-size: 1rem !important;
+                    color: #fff !important;
+                    font-weight: 500 !important;
+                    padding: 8px !important;
+                    margin: 0 3px !important;
+                    border-radius: 50px !important;
+                    min-width: 130px !important;
+                  ">
+                                Community
+                            </div>
+                            <div class="text-center" style="
+                    background-color: #71639e !important;
+                    font-size: 1rem !important;
+                    color: #fff !important;
+                    font-weight: 500 !important;
+                    padding: 8px !important;
+                    margin: 0 3px !important;
+                    border-radius: 50px !important;
+                    min-width: 130px !important;
+                  ">
+                                Enterprise
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row" style="margin-top: 10px;display: flex;justify-content: end;float: right;">
+                        <div class="d-flex align-items-center justify-content-end flex-wrap gap-2">
+                            <span class="me-3"><b>Availability: </b></span>
+                            <div class="d-flex align-items-center justify-content-center gap-2 text-center col" style="
+                    border: 2px solid #ebebeb;
+    font-size: 1rem !important;
+    color: #333 !important;
+    font-weight: 500 !important;
+    padding: 8px !important;
+    margin: 0 3px !important;
+    border-radius: 20px !important;
+    min-width: 150px !important;
+
+                  ">
+                                <img src="./assets/icons/close.png" alt="" width="18" height="18">
+                                Odoo Online
+                            </div>
+                            <div class="d-flex align-items-center justify-content-center gap-2 text-center col" style="
+                    border: 2px solid #ebebeb;
+    font-size: 1rem !important;
+    color: #333 !important;
+    font-weight: 500 !important;
+    padding: 8px !important;
+    margin: 0 3px !important;
+    border-radius: 20px !important;
+    min-width: 150px !important;
+
+                  ">
+                                <img src="./assets/icons/tick.png" alt="" width="18" height="18">
+                                Odoo.sh
+                            </div>
+                            <div class="d-flex align-items-center justify-content-center gap-2 text-center col" style="
+                   border: 2px solid #ebebeb;
+    font-size: 1rem !important;
+    color: #333 !important;
+    font-weight: 500 !important;
+    padding: 8px !important;
+    margin: 0 3px !important;
+    border-radius: 20px !important;
+    min-width: 150px !important;
+
+                  ">
+                                <img src="./assets/icons/tick.png" alt="" width="18" height="18">
+                                On Premise
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid cmpad text-center py-5 py-md-3">
+        <div class="row">
+            <div class="col-md-12">
+                <h3 class="mainhead" style="font-size: 2.3rem;padding-top: 1rem;font-weight: 700;color: black;">Oman E-Invoicing - ConvergeX</h3>
+                <p class="para mb-4" style="font-size: 20px;color: #6b7280;">PINT OM e-invoice generation and ASP submission for the Oman Tax Authority's Fawtara program.</p>
+                <div class="d-flex justify-content-center gap-1 flex-wrap">
+                    <a href="mailto:"
+                        class="contact-btn email-btn d-flex align-items-center gap-2 justify-content-center"
+                        style="position: relative;padding: 15px 25px;border: none;border-radius: 50px;font-size: 16px;font-weight: 600;text-decoration: none;color: white;cursor: pointer;min-width: 200px;justify-content: center;background-color: #4facfe">
+                        <img src="./assets/icons/mail.png" alt="" width="25" height="25">
+                        <span class="btn-text" style="font-size: 15px;letter-spacing: 0.5px;">Email Us</span>
+                    </a>
+                    <a href="skype:"
+                        class="contact-btn skype-btn d-flex align-items-center gap-2 justify-content-center"
+                        style="position: relative;padding: 15px 25px;border: none;border-radius: 50px;font-size: 16px;font-weight: 600;text-decoration: none;color: white;cursor: pointer;min-width: 200px;justify-content: center;background-color: #555ecb">
+                        <img src="./assets/icons/tms.png" alt="" width="30" height="30">
+                        <span class="btn-text" style="font-size: 15px;letter-spacing: 0.5px;">Teams</span>
+                    </a>
+                    <a href="https://wa.me/919074270811 "
+                        class="contact-btn whatsapp-btn d-flex align-items-center gap-2 justify-content-center"
+                        style="position: relative;padding: 15px 25px;border: none;border-radius: 50px;font-size: 16px;font-weight: 600;text-decoration: none;color: white;cursor: pointer;min-width: 200px;justify-content: center;background-color: #25d366;">
+                        <img src="./assets/icons/whatsapp.png" alt="" width="25" height="25">
+                        <span class="btn-text" style="font-size: 15px;letter-spacing: 0.5px;">+91 9074270811</span>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid cmpad py-2 py-md-5">
+        <div class="row">
+            <div class="col-md-6 mb-3 mb-md-0">
+                <!-- Blog Card -->
+                <div class="content-card blog-card h-100" style="    background-color: #8b5cf612;
+    border: 2px solid #8a5cf615;
+    backdrop-filter: blur(20px);
+    border-radius: 10px;
+    padding: 32px;
+    overflow: hidden;">
+                    <div class="card-icon d-flex align-items-center justify-content-center gap-2"
+                        style="width: 60px;height: 60px;border-radius: 10px;margin-bottom: 24px;position: relative;overflow: hidden;background-color: #8B5CF6;">
+                        <img src="./assets/icons/document.png" alt="" width="30" height="30">
+                    </div>
+                    <h3 class="card-title"
+                        style="font-size: 20px;font-weight: 600;color: black;margin-bottom: 12px;letter-spacing: -0.025em;">
+                        Read Blog</h3>
+                    <p class="card-description mb-3"
+                        style="font-size: 16px;color: #6b7280;line-height: 1.6;">Guide to Oman Fawtara e-invoicing via ConvergeX.</p>
+                    <div class="d-flex align-items-center"
+                        style="padding: 10px 16px;border-radius: 8px;font-weight: 500;font-size: 14px;background-color: #9e6390;color: white;gap: 10px;width: 100%;max-width: 100%;box-sizing: border-box;overflow: hidden;">
+                        <div style="display: flex;align-items: center;justify-content: center;flex-shrink: 0;">
+                            <img src="./assets/icons/copy.png" alt="" width="18" height="18" style="vertical-align: middle;">
+                        </div>
+                        <a href="https://www.cybrosys.com/blog/how-odoo-integrates-with-fawtara-for-omans-e-invoicing-system"
+                            target="_blank"
+                            title="https://www.cybrosys.com/blog/how-odoo-integrates-with-fawtara-for-omans-e-invoicing-system"
+                            style="color: #fff;text-decoration: none;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;flex: 1;min-width: 0;font-weight: 500;font-size: 14px;">
+                            https://www.cybrosys.com/blog/how-odoo-integrates-with-fawtara-for-omans-e-invoicing-system
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <!-- Video Card -->
+                <div class="content-card video-card h-100" style="    background-color: #ef444421;
+    border: 2px solid #ef44441f;
+    backdrop-filter: blur(20px);
+    border-radius: 10px;
+    padding: 32px;
+    overflow: hidden;">
+                    <div class="card-icon d-flex align-items-center justify-content-center gap-2"
+                        style="width: 60px;height: 60px;border-radius: 10px;margin-bottom: 24px;position: relative;overflow: hidden;background-color: #EF4444;">
+                        <img src="./assets/icons/play.png" alt="" width="23px" height="23px">
+                    </div>
+                    <h3 class="card-title"
+                        style="font-size: 20px;font-weight: 600;color: black;margin-bottom: 12px;letter-spacing: -0.025em;">
+                        Video Tutorial</h3>
+                    <p class="card-description mb-3"
+                        style="font-size: 16px;color: #6b7280;margin-bottom: 0;line-height: 1.6;">Watch our detailed
+                        video demonstrations and tutorials on YouTube
+                        for
+                        hands-on learning.</p>
+                    <a href="https://www.youtube.com/watch?v=gYkQHWJcx6g"
+                        class="card-action video-action d-flex align-items-center justify-content-center gap-2"
+                        style="padding: 10px 20px;border-radius: 8px;font-weight: 500;font-size: 15px;text-decoration: none;border: none;width: max-content;background-color: #9e6390;color: white;transition: .3s;">
+                        <img src="./assets/icons/play.png" alt="" width="15px" height="15px">
+                        Watch Demo
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid cmpad py-2 py-md-5">
+        <div class="tabs-design1">
+            <ul class="nav nav-pills justify-content-start justify-content-md-center pb-4" style="    flex-flow: nowrap;
+    overflow: hidden;
+    overflow-x: auto;" id="pills1" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link active" id="screenshot-tab" data-bs-toggle="pill" data-bs-target="#screenshot"
+                        type="button" role="tab" style="width: max-content;border-radius: 50px;
+    margin: 0 5px;
+    padding: 12px 24px;
+    font-weight: 500;
+
+    border: 2px solid #e9ecef;
+    position: relative;
+
+    ">
+                        Screenshot
+                    </a>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link" id="features-tab" data-bs-toggle="pill" data-bs-target="#features" type="button"
+                        role="tab" style="width: max-content;border-radius: 50px;
+    margin: 0 5px;
+    padding: 12px 24px;
+    font-weight: 500;
+
+    border: 2px solid #e9ecef;
+    position: relative;
+
+    ">
+                        Features
+                    </a>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link" id="faq-tab" data-bs-toggle="pill" data-bs-target="#faq" type="button"
+                        role="tab" style="width: max-content;border-radius: 50px;
+    margin: 0 5px;
+    padding: 12px 24px;
+    font-weight: 500;
+
+    border: 2px solid #e9ecef;
+    position: relative;
+
+    ">
+                        Frequent Questions
+                    </a>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link" id="latest-release-tab" data-bs-toggle="pill" data-bs-target="#latest-release"
+                        type="button" role="tab" style="width: max-content;border-radius: 50px;
+    margin: 0 5px;
+    padding: 12px 24px;
+    font-weight: 500;
+
+    border: 2px solid #e9ecef;
+    position: relative;
+
+    ">
+                        Latest Release
+                    </a>
+                </li>
+            </ul>
+            <div class="tab-content bg-white rounded-4" style="border: 2px solid #e9ecef;border-radius: 10px;"
+                id="pills1Content">
+                <div class="tab-pane fade show active" id="screenshot" role="tabpane2">
+                    <div class="row g-3 py-3">
+                        <div class="col-md-12">
+                            <div class="screenshot-item text-center" style="background-color:#f8fafc;border-radius:10px;padding:20px;border:2px solid #e9ecef;margin-bottom:20px;">
+                                <h1 style="font-weight:bold; line-height:120%; text-align:center; text-transform:capitalize; font-size: 32px; margin-bottom: 20px;">
+                                    <span style="color:#121212;">ConvergeX </span>
+                                    <span style="color: #7f54b3;">Configuration</span>
+                                </h1>
+                                <p style="font-size: 16px; color: #6b7280; margin-bottom: 20px;">Enter your ConvergeX (convergex.biz) Client ID, Client Secret, and invoice type UUIDs directly from Settings &gt; Invoicing &gt; ConvergeX (Oman E-Invoicing), then verify them with Test Connection.</p>
+                                <img alt="ConvergeX (Oman E-Invoicing) configuration in Settings" class="img-fluid rounded-3 shadow-sm" loading="lazy" src="./assets/screenshots/conv1.png" style="max-width:100%;border:1px solid #e5e7eb;">
+                            </div>
+                        </div>
+
+                        <div class="col-md-12">
+                            <div class="screenshot-item text-center" style="background-color:#f8fafc;border-radius:10px;padding:20px;border:2px solid #e9ecef;margin-bottom:20px;">
+                                <h1 style="font-weight:bold; line-height:120%; text-align:center; text-transform:capitalize; font-size: 32px; margin-bottom: 20px;">
+                                    <span style="color:#121212;">Submit to </span>
+                                    <span style="color: #7f54b3;">ConvergeX</span>
+                                </h1>
+                                <p style="font-size: 16px; color: #6b7280; margin-bottom: 20px;">One click on a posted invoice sends the invoice data straight to ConvergeX's Customer Invoice API - no manual XML file or upload needed.</p>
+                                <img alt="Submit to ConvergeX button on a posted invoice" class="img-fluid rounded-3 shadow-sm" loading="lazy" src="./assets/screenshots/conv2.1.png" style="max-width:100%;border:1px solid #e5e7eb;">
+                            </div>
+                        </div>
+
+                        <div class="col-md-12">
+                            <div class="screenshot-item text-center" style="background-color:#f8fafc;border-radius:10px;padding:20px;border:2px solid #e9ecef;margin-bottom:20px;">
+                                <h1 style="font-weight:bold; line-height:120%; text-align:center; text-transform:capitalize; font-size: 32px; margin-bottom: 20px;">
+                                    <span style="color:#121212;">Submission </span>
+                                    <span style="color: #7f54b3;">Status Ribbon</span>
+                                </h1>
+                                <p style="font-size: 16px; color: #6b7280; margin-bottom: 20px;">A "Submitted" ribbon shows right on the invoice the moment ConvergeX accepts it - no need to open a separate record just to check status.</p>
+                                <img alt="Submitted ribbon shown on a ConvergeX invoice" class="img-fluid rounded-3 shadow-sm" loading="lazy" src="./assets/screenshots/conv3.png" style="max-width:100%;border:1px solid #e5e7eb;">
+                            </div>
+                        </div>
+
+                        <div class="col-md-12">
+                            <div class="screenshot-item text-center" style="background-color:#f8fafc;border-radius:10px;padding:20px;border:2px solid #e9ecef;margin-bottom:20px;">
+                                <h1 style="font-weight:bold; line-height:120%; text-align:center; text-transform:capitalize; font-size: 32px; margin-bottom: 20px;">
+                                    <span style="color:#121212;">Tracking Number </span>
+                                    <span style="color: #7f54b3;">&amp; QR Code</span>
+                                </h1>
+                                <p style="font-size: 16px; color: #6b7280; margin-bottom: 20px;">Every submission gets its own ConvergeX Documents record: the ConvergeX Invoice ID, tracking number, processed reference, and OTA QR code, all in one place.</p>
+                                <img alt="ConvergeX document showing tracking number, invoice ID and QR code" class="img-fluid rounded-3 shadow-sm" loading="lazy" src="./assets/screenshots/conv4.png" style="max-width:100%;border:1px solid #e5e7eb;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="features" role="tabpanel">
+                    <div class="p-3 py-md-5">
+                        <h2 class="mainhead text-center mb-4" style="font-size: 2rem;font-weight: 700;color: black;">Our
+                            <span>Core Features</span>
+                        </h2>
+                        <div class="row" style="border-radius: 10px;">
+
+                            <div class="col-md-4">
+                                <div class="feature-item mb-4 d-flex flex-column align-items-center justify-content-center text-center"
+                                    style="padding: 25px; background-color: #637eea0d; border-radius: 10px;">
+                                    <div class="feature-number d-flex align-items-center justify-content-center"
+                                        style="width: 45px; height: 45px; background-color: #7877c633; border-radius: 50%; font-size: 1.2rem; font-weight: 600; color: #71639e; margin-bottom: 15px;">
+                                        <i class="fa-solid fa-code"></i>
+                                    </div>
+                                    <h3 class="feature-title"
+                                        style="font-size: 1.2rem; font-weight: 600; margin-bottom: 0; color: black; line-height: 1.3;">
+                                        Direct JSON Submission</h3>
+                                    <p style="margin-top: 10px; font-size: 0.95rem; color: #6b7280;">Sends invoice and credit note data straight to ConvergeX's Customer Invoice API as structured JSON - ConvergeX generates the compliant PINT OM e-invoice, QR code, and OTA submission itself.</p>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4">
+                                <div class="feature-item mb-4 d-flex flex-column align-items-center justify-content-center text-center"
+                                    style="padding: 25px; background-color: #637eea0d; border-radius: 10px;">
+                                    <div class="feature-number d-flex align-items-center justify-content-center"
+                                        style="width: 45px; height: 45px; background-color: #7877c633; border-radius: 50%; font-size: 1.2rem; font-weight: 600; color: #71639e; margin-bottom: 15px;">
+                                        <i class="fa-solid fa-user-check"></i>
+                                    </div>
+                                    <h3 class="feature-title"
+                                        style="font-size: 1.2rem; font-weight: 600; margin-bottom: 0; color: black; line-height: 1.3;">
+                                        Automatic Customer Master Sync</h3>
+                                    <p style="margin-top: 10px; font-size: 0.95rem; color: #6b7280;">Every buyer is synced to ConvergeX's Customer Master before submission, exactly as required for its PEPPOL network checks - handled automatically, with no separate setup step.</p>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4">
+                                <div class="feature-item mb-4 d-flex flex-column align-items-center justify-content-center text-center"
+                                    style="padding: 25px; background-color: #637eea0d; border-radius: 10px;">
+                                    <div class="feature-number d-flex align-items-center justify-content-center"
+                                        style="width: 45px; height: 45px; background-color: #7877c633; border-radius: 50%; font-size: 1.2rem; font-weight: 600; color: #71639e; margin-bottom: 15px;">
+                                        <i class="fa-solid fa-file-invoice"></i>
+                                    </div>
+                                    <h3 class="feature-title"
+                                        style="font-size: 1.2rem; font-weight: 600; margin-bottom: 0; color: black; line-height: 1.3;">
+                                        Credit Note Support</h3>
+                                    <p style="margin-top: 10px; font-size: 0.95rem; color: #6b7280;">Submits credit notes with the required preceding invoice references straight from Odoo's own Credit Note flow - no extra data entry needed.</p>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4">
+                                <div class="feature-item mb-4 d-flex flex-column align-items-center justify-content-center text-center"
+                                    style="padding: 25px; background-color: #637eea0d; border-radius: 10px;">
+                                    <div class="feature-number d-flex align-items-center justify-content-center"
+                                        style="width: 45px; height: 45px; background-color: #7877c633; border-radius: 50%; font-size: 1.2rem; font-weight: 600; color: #71639e; margin-bottom: 15px;">
+                                        <i class="fa-solid fa-people-arrows"></i>
+                                    </div>
+                                    <h3 class="feature-title"
+                                        style="font-size: 1.2rem; font-weight: 600; margin-bottom: 0; color: black; line-height: 1.3;">
+                                        B2B / B2C Auto-Detection</h3>
+                                    <p style="margin-top: 10px; font-size: 0.95rem; color: #6b7280;">The correct BTOM-001 transaction type - Full Tax B2B or Simplified B2C - is set automatically from whether the buyer is a company, with no manual toggle to get wrong.</p>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4">
+                                <div class="feature-item mb-4 d-flex flex-column align-items-center justify-content-center text-center"
+                                    style="padding: 25px; background-color: #637eea0d; border-radius: 10px;">
+                                    <div class="feature-number d-flex align-items-center justify-content-center"
+                                        style="width: 45px; height: 45px; background-color: #7877c633; border-radius: 50%; font-size: 1.2rem; font-weight: 600; color: #71639e; margin-bottom: 15px;">
+                                        <i class="fa-solid fa-qrcode"></i>
+                                    </div>
+                                    <h3 class="feature-title"
+                                        style="font-size: 1.2rem; font-weight: 600; margin-bottom: 0; color: black; line-height: 1.3;">
+                                        QR Code &amp; Tracking</h3>
+                                    <p style="margin-top: 10px; font-size: 0.95rem; color: #6b7280;">Captures the OTA QR code, ConvergeX tracking number, and processed reference straight from the API response onto a dedicated ConvergeX Documents record.</p>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4">
+                                <div class="feature-item mb-4 d-flex flex-column align-items-center justify-content-center text-center"
+                                    style="padding: 25px; background-color: #637eea0d; border-radius: 10px;">
+                                    <div class="feature-number d-flex align-items-center justify-content-center"
+                                        style="width: 45px; height: 45px; background-color: #7877c633; border-radius: 50%; font-size: 1.2rem; font-weight: 600; color: #71639e; margin-bottom: 15px;">
+                                        <i class="fa-solid fa-plug-circle-check"></i>
+                                    </div>
+                                    <h3 class="feature-title"
+                                        style="font-size: 1.2rem; font-weight: 600; margin-bottom: 0; color: black; line-height: 1.3;">
+                                        One-Click Test Connection</h3>
+                                    <p style="margin-top: 10px; font-size: 0.95rem; color: #6b7280;">Verify your ConvergeX Client ID and Client Secret directly from Settings, with a dedicated Test Connection button - before submitting a single invoice.</p>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4">
+                                <div class="feature-item mb-4 d-flex flex-column align-items-center justify-content-center text-center"
+                                    style="padding: 25px; background-color: #637eea0d; border-radius: 10px;">
+                                    <div class="feature-number d-flex align-items-center justify-content-center"
+                                        style="width: 45px; height: 45px; background-color: #7877c633; border-radius: 50%; font-size: 1.2rem; font-weight: 600; color: #71639e; margin-bottom: 15px;">
+                                        <i class="fa-solid fa-id-card"></i>
+                                    </div>
+                                    <h3 class="feature-title"
+                                        style="font-size: 1.2rem; font-weight: 600; margin-bottom: 0; color: black; line-height: 1.3;">
+                                        Oman VAT Format Validation</h3>
+                                    <p style="margin-top: 10px; font-size: 0.95rem; color: #6b7280;">Validates the Oman VAT format ("OM" + 10 digits) the moment a customer is saved in Odoo, catching bad data before ConvergeX ever rejects it at submission.</p>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4">
+                                <div class="feature-item mb-4 d-flex flex-column align-items-center justify-content-center text-center"
+                                    style="padding: 25px; background-color: #637eea0d; border-radius: 10px;">
+                                    <div class="feature-number d-flex align-items-center justify-content-center"
+                                        style="width: 45px; height: 45px; background-color: #7877c633; border-radius: 50%; font-size: 1.2rem; font-weight: 600; color: #71639e; margin-bottom: 15px;">
+                                        <i class="fa-solid fa-clock-rotate-left"></i>
+                                    </div>
+                                    <h3 class="feature-title"
+                                        style="font-size: 1.2rem; font-weight: 600; margin-bottom: 0; color: black; line-height: 1.3;">
+                                        Status Polling Cron</h3>
+                                    <p style="margin-top: 10px; font-size: 0.95rem; color: #6b7280;">A scheduled action polls ConvergeX for the latest status on every submitted document until it's acknowledged by the Oman Tax Authority - no manual refresh needed.</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-pane fade" id="faq" role="tabpanel">
+                    <div class="p-3 py-md-5">
+                        <h2 class="mainhead text-center mb-4" style="font-size: 2rem;font-weight: 700;color: black;">
+                            Frequent <span>Questions</span></h2>
+                        <div class="row justify-content-center">
+                            <div class="col-md-10">
+
+                                <div class="faq-item" style="background-color: #f8fafc; border: 2px solid #e9ecef; border-radius: 10px; padding: 20px; margin-bottom: 20px;">
+                                    <h4 style="font-size: 1.1rem; font-weight: 600; color: #121212; margin-bottom: 10px;">
+                                        <i class="fa-solid fa-circle-question" style="color: #7f54b3; margin-right: 8px;"></i>
+                                        Does this module build the e-invoice XML itself?
+                                    </h4>
+                                    <p style="font-size: 0.95rem; color: #6b7280; margin-bottom: 0; padding-left: 30px;">
+                                        No. ConvergeX's API takes structured JSON directly - this module builds that JSON from your posted invoice/credit note and sends it to ConvergeX, which generates the compliant PINT OM e-invoice XML, QR code, and PEPPOL/OTA submission on its own platform.
+                                    </p>
+                                </div>
+
+                                <div class="faq-item" style="background-color: #f8fafc; border: 2px solid #e9ecef; border-radius: 10px; padding: 20px; margin-bottom: 20px;">
+                                    <h4 style="font-size: 1.1rem; font-weight: 600; color: #121212; margin-bottom: 10px;">
+                                        <i class="fa-solid fa-circle-question" style="color: #7f54b3; margin-right: 8px;"></i>
+                                        Do I need my own ConvergeX account to use this module?
+                                    </h4>
+                                    <p style="font-size: 0.95rem; color: #6b7280; margin-bottom: 0; padding-left: 30px;">
+                                        Yes. This module is a connector, not a ConvergeX subscription - you'll need your own ConvergeX (convergex.biz) account with a Client ID and Client Secret. Enter them in Settings &gt; Invoicing &gt; ConvergeX and use the Test Connection button to verify they work before submitting any invoices.
+                                    </p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-pane fade" id="latest-release" role="tabpanel">
+                    <div class="p-3 py-md-5">
+                        <h2 class="mainhead text-center mb-4" style="font-size: 2rem;font-weight: 700;color: black;">
+                            Latest <span>Releases</span></h2>
+                        <div class="row">
+
+                            <div class="col-md-4 mb-4">
+                                <div class="release-item h-100" style="    position: relative;
+                                padding: 30px;
+                                border: 2px solid #71639e24;
+                                border-radius: 15px;">
+                                    <div class="release-header d-flex align-items-center flex-wrap gap-3" style="
+                                    margin-bottom: 0.75rem;
+                                    ">
+                                        <div class="version" style="font-size: 1.25rem;
+                                        font-weight: 700;
+                                        color: #1a202c;">Latest Release 19.0.1.0.0
+                                        </div>
+                                        <div style="padding: 0.25rem 0.75rem;
+                                        border-radius: 20px;
+                                        font-size: 0.75rem;
+                                        font-weight: 600;
+                                        text-transform: uppercase;
+                                        letter-spacing: 0.5px;
+                                        position: relative;
+                                        overflow: hidden;    background-color: #9ae6b4;
+                                        color: #2d7d32;
+                                        border: 2px solid #68d391;" class=" add">Add
+                                        </div>
+                                    </div>
+                                    <div class="feature-list">
+                                        <div class="feature-item p-3" style="border-radius: 5px;    display: flex;
+
+                                        align-items: center;
+                                        padding: 25px;
+                                        background-color: #f5f5f5e7;
+                                        border-radius: 10px;
+                                        text-align: left;">
+
+                                            <div class="feature-text" style="color: #6b7280;
+                                        line-height: 1.6;
+                                        font-size: 0.95rem;">Initial Commit
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <div class="release-item h-100" style="    position: relative;
+                                padding: 30px;
+                                border: 2px solid #71639e24;
+                                border-radius: 15px;">
+                                    <div class="release-header d-flex align-items-center flex-wrap gap-3" style="
+                                    margin-bottom: 0.75rem;
+                                    ">
+                                        <div class="version" style="font-size: 1.25rem;
+                                        font-weight: 700;
+                                        color: #1a202c;">Latest Release 19.0.1.1.0
+                                        </div>
+                                        <div style="padding: 0.25rem 0.75rem;
+                                        border-radius: 20px;
+                                        font-size: 0.75rem;
+                                        font-weight: 600;
+                                        text-transform: uppercase;
+                                        letter-spacing: 0.5px;
+                                        position: relative;
+                                        overflow: hidden;    background-color: #9ae6b4;
+                                        color: #2d7d32;
+                                        border: 2px solid #68d391;" class=" add">Update
+                                        </div>
+                                    </div>
+                                    <div class="feature-list">
+                                        <div class="feature-item p-3" style="border-radius: 5px;    display: flex;
+
+                                        align-items: center;
+                                        padding: 25px;
+                                        background-color: #f5f5f5e7;
+                                        border-radius: 10px;
+                                        text-align: left;">
+
+                                            <div class="feature-text" style="color: #6b7280;
+                                        line-height: 1.6;
+                                        font-size: 0.95rem;">Added required Oman HS/ISIC codes
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid cmpad py-2 py-md-5">
+        <div class="highlights-section">
+            <h2 class="mainhead text-center" style="font-size: 2rem;font-weight: 700;color: black;">Related Modules</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <a href="https://apps.odoo.com/apps/modules/19.0/hide_menu_user " style="text-decoration: none;">
+                        <div class="highlight-card h-100 p-4" style="background-color: white;
+    backdrop-filter: blur(20px);
+    border-radius: 10px;
+    padding: 32px;
+    border: 2px solid #71639e1a;
+    position: relative;
+    overflow: hidden;">
+                            <div class="card-image" style="    border: 2px solid #71639e1c;
+    margin-bottom: 1rem;
+    border-radius: 10px;
+    overflow: hidden;">
+                                <img src="./assets/modules/1.jpg" alt="" style="width: 100%;border-radius: 10px;">
+                            </div>
+                            <h3 class="card-title"
+                                style="font-size: 20px;font-weight: 600;color: black;letter-spacing: -0.025em;">
+                                Hide Any Menu User Wise</h3>
+                            <p class="card-description"
+                                style="font-size: 16px;color: #6b7280;margin-bottom: 0;line-height: 1.6;">This Module
+                                Helps
+                                To Hide any Menu items user wise.</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <a href="https://apps.odoo.com/apps/modules/19.0/base_accounting_kit "
+                        style="text-decoration: none;">
+                        <div class="highlight-card h-100 p-4" style="background-color: white;
+    backdrop-filter: blur(20px);
+    border-radius: 10px;
+    padding: 32px;
+    border: 2px solid #71639e1a;
+    position: relative;
+    overflow: hidden;">
+                            <div class="card-image" style="    border: 2px solid #71639e1c;
+    margin-bottom: 1rem;
+    border-radius: 10px;
+    overflow: hidden;">
+                                <img src="./assets/modules/2.gif" alt="" style="width: 100%;border-radius: 10px;">
+                            </div>
+                            <h3 class="card-title"
+                                style="font-size: 20px;font-weight: 600;color: black;letter-spacing: -0.025em;">
+                                Odoo 19 Full Accounting Kit for Community</h3>
+                            <p class="card-description"
+                                style="font-size: 16px;color: #6b7280;margin-bottom: 0;line-height: 1.6;">Invoice
+                                Report,
+                                A Full-Fledged Accounting kit For Every Organization.</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <a href="https://apps.odoo.com/apps/modules/19.0/auto_database_backup "
+                        style="text-decoration: none;">
+                        <div class="highlight-card h-100 p-4" style="background-color: white;
+    backdrop-filter: blur(20px);
+    border-radius: 10px;
+    padding: 32px;
+    border: 2px solid #71639e1a;
+    position: relative;
+    overflow: hidden;">
+                            <div class="card-image" style="    border: 2px solid #71639e1c;
+    margin-bottom: 1rem;
+    border-radius: 10px;
+    overflow: hidden;">
+                                <img src="./assets/modules/3.gif" alt="" style="width: 100%;border-radius: 10px;">
+                            </div>
+                            <h3 class="card-title"
+                                style="font-size: 20px;font-weight: 600;color: black;letter-spacing: -0.025em;">
+                                Automatic Database Backup Odoo19</h3>
+                            <p class="card-description"
+                                style="font-size: 16px;color: #6b7280;margin-bottom: 0;line-height: 1.6;">Automatic
+                                Database
+                                Backup To Local Server, Remote Server,Google Drive, Dropbox, Onedrive, Nextcloud and
+                                Amazon
+                                S3 Odoo19. </p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid cmpad py-2 py-md-5">
+        <div class="highlights-section">
+            <h2 class="mainhead text-center" style="font-size: 2rem;font-weight: 700;color: black;">Our
+                <span>Services</span>
+            </h2>
+            <div class="row">
+                <div class="col-md-3 mb-4">
+                    <div class="highlight-card h-100 high d-flex flex-column justify-content-center align-items-center text-center"
+                        style="background-color: #8d76d51f;
+    backdrop-filter: blur(20px);
+    border-radius: 10px;
+    padding: 32px;
+    border: 2px solid #71639e1a;
+    position: relative;
+    overflow: hidden;">
+                        <div class="card-icon d-flex align-items-center justify-content-center gap-2"
+                            style="width: 60px;height: 60px;border-radius: 10px;margin-bottom: 24px;position: relative;overflow: hidden;background-color: #71639e;">
+                            <img src="./assets/icons/setting.png" alt="" width="30" height="30">
+                        </div>
+                        <h3 class="card-title"
+                            style="font-size: 20px;font-weight: 600;color: black;letter-spacing: -0.025em;">
+                            Odoo Customization</h3>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <div class="highlight-card h-100 high d-flex flex-column justify-content-center align-items-center text-center"
+                        style="background-color: #8d76d51f;
+    backdrop-filter: blur(20px);
+    border-radius: 10px;
+    padding: 32px;
+    border: 2px solid #71639e1a;
+    position: relative;
+    overflow: hidden;">
+                        <div class="card-icon d-flex align-items-center justify-content-center gap-2"
+                            style="width: 60px;height: 60px;border-radius: 10px;margin-bottom: 24px;position: relative;overflow: hidden;background-color: #71639e;">
+                            <img src="./assets/icons/imple.png" alt="" width="30" height="30">
+                        </div>
+                        <h3 class="card-title"
+                            style="font-size: 20px;font-weight: 600;color: black;letter-spacing: -0.025em;">
+                            Odoo Implementation</h3>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <div class="highlight-card h-100 high d-flex flex-column justify-content-center align-items-center text-center"
+                        style="background-color: #8d76d51f;
+    backdrop-filter: blur(20px);
+    border-radius: 10px;
+    padding: 32px;
+    border: 2px solid #71639e1a;
+    position: relative;
+    overflow: hidden;">
+                        <div class="card-icon d-flex align-items-center justify-content-center gap-2"
+                            style="width: 60px;height: 60px;border-radius: 10px;margin-bottom: 24px;position: relative;overflow: hidden;background-color: #71639e;">
+                            <img src="./assets/icons/support.png" alt="" width="30" height="30">
+                        </div>
+                        <h3 class="card-title"
+                            style="font-size: 20px;font-weight: 600;color: black;letter-spacing: -0.025em;">
+                            Odoo Support</h3>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <div class="highlight-card h-100 high d-flex flex-column justify-content-center align-items-center text-center"
+                        style="background-color: #8d76d51f;
+    backdrop-filter: blur(20px);
+    border-radius: 10px;
+    padding: 32px;
+    border: 2px solid #71639e1a;
+    position: relative;
+    overflow: hidden;">
+                        <div class="card-icon d-flex align-items-center justify-content-center gap-2"
+                            style="width: 60px;height: 60px;border-radius: 10px;margin-bottom: 24px;position: relative;overflow: hidden;background-color: #71639e;">
+                            <img src="./assets/icons/transfer.png" alt="" width="30" height="30">
+                        </div>
+                        <h3 class="card-title"
+                            style="font-size: 20px;font-weight: 600;color: black;letter-spacing: -0.025em;">
+                            Odoo Migration</h3>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <div class="highlight-card h-100 high d-flex flex-column justify-content-center align-items-center text-center"
+                        style="background-color: #8d76d51f;
+    backdrop-filter: blur(20px);
+    border-radius: 10px;
+    padding: 32px;
+    border: 2px solid #71639e1a;
+    position: relative;
+    overflow: hidden;">
+                        <div class="card-icon d-flex align-items-center justify-content-center gap-2"
+                            style="width: 60px;height: 60px;border-radius: 10px;margin-bottom: 24px;position: relative;overflow: hidden;background-color: #71639e;">
+                            <img src="./assets/icons/idea.png" alt="" width="30" height="30">
+                        </div>
+                        <h3 class="card-title"
+                            style="font-size: 20px;font-weight: 600;color: black;letter-spacing: -0.025em;">
+                            Odoo Integration</h3>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <div class="highlight-card h-100 high d-flex flex-column justify-content-center align-items-center text-center"
+                        style="background-color: #8d76d51f;
+    backdrop-filter: blur(20px);
+    border-radius: 10px;
+    padding: 32px;
+    border: 2px solid #71639e1a;
+    position: relative;
+    overflow: hidden;">
+                        <div class="card-icon d-flex align-items-center justify-content-center gap-2"
+                            style="width: 60px;height: 60px;border-radius: 10px;margin-bottom: 24px;position: relative;overflow: hidden;background-color: #71639e;">
+                            <img src="./assets/icons/chat.png" alt="" width="30" height="30">
+                        </div>
+                        <h3 class="card-title"
+                            style="font-size: 20px;font-weight: 600;color: black;letter-spacing: -0.025em;">
+                            Odoo Consultancy</h3>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <div class="highlight-card h-100 high d-flex flex-column justify-content-center align-items-center text-center"
+                        style="background-color: #8d76d51f;
+    backdrop-filter: blur(20px);
+    border-radius: 10px;
+    padding: 32px;
+    border: 2px solid #71639e1a;
+    position: relative;
+    overflow: hidden;">
+                        <div class="card-icon d-flex align-items-center justify-content-center gap-2"
+                            style="width: 60px;height: 60px;border-radius: 10px;margin-bottom: 24px;position: relative;overflow: hidden;background-color: #71639e;">
+                            <img src="./assets/icons/chart.png" alt="" width="30" height="30">
+                        </div>
+                        <h3 class="card-title"
+                            style="font-size: 20px;font-weight: 600;color: black;letter-spacing: -0.025em;">
+                            Odoo Licensing</h3>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <div class="highlight-card h-100 high d-flex flex-column justify-content-center align-items-center text-center"
+                        style="background-color: #8d76d51f;
+    backdrop-filter: blur(20px);
+    border-radius: 10px;
+    padding: 32px;
+    border: 2px solid #71639e1a;
+    position: relative;
+    overflow: hidden;">
+                        <div class="card-icon d-flex align-items-center justify-content-center gap-2"
+                            style="width: 60px;height: 60px;border-radius: 10px;margin-bottom: 24px;position: relative;overflow: hidden;background-color: #71639e;">
+                            <img src="./assets/icons/people.png" alt="" width="30" height="30">
+                        </div>
+                        <h3 class="card-title"
+                            style="font-size: 20px;font-weight: 600;color: black;letter-spacing: -0.025em;">
+                            Hire Odoo Developer</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js "></script>
+
+</html>
